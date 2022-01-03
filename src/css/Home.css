@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  .menu li{
+    padding: 20px;
+   list-style: none;
+  }
+  
+  .menu a, .images a{
+    text-decoration: none;
+    color: #445f93;
+  }
+  

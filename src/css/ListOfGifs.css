@@ -1,0 +1,22 @@
+.gifs {
+    flex-wrap: wrap; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: end;
+    justify-content: center;
+}
+
+.gifs a{
+    padding: 5px;
+}
+
+.images {
+    width: 400px;
+    margin: 20px;
+    margin-top: 0;
+}
+  
+.images img{
+border-radius: 15px;
+width: 400px;
+}
