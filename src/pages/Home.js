@@ -7,26 +7,29 @@ import useGifs from "../hooks/useGifs";
 const MOST_POPULAR = ["Cats", "Dogs", "Pizza", "Books"];
 
 const Home = () => {
-  const [keyWord, setKeyWord] = useState('')
-  const [path, pushLocation] = useLocation()
-  const  {loading, gifs} =  useGifs()
+  const [keyWord, setKeyWord] = useState("");
+  const [path, pushLocation] = useLocation();
+  const { loading, gifs } = useGifs();
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    pushLocation(`/search/${keyWord}`)
-    console.log('keyWord', keyWord);
-     
+    e.preventDefault();
+    pushLocation(`/search/${keyWord}`);
   };
 
   const handleChange = (e) => {
-    setKeyWord(e.target.value)
+    setKeyWord(e.target.value);
   };
 
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input placeholder="Search a git here guys" value={keyWord} type='text' onChange={handleChange}/>
-        <input type="submit" value="Search"/>
+        <input
+          placeholder="Search a git here guys"
+          value={keyWord}
+          type="text"
+          onChange={handleChange}
+        />
+        <input type="submit" value="Search" />
       </form>
       <ListOfGifs gifs={gifs} />
       <ul className="menu">

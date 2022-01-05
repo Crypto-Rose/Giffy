@@ -1,0 +1,14 @@
+
+.images {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
+}
+
+.images img{
+border-radius: 15px;
+width: 100%;
+}
+
